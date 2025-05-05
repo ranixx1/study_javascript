@@ -1,0 +1,87 @@
+// Declarar variavel
+var idade = 19;
+var nome = "Ranilton";
+var cadastrado = true;
+
+// Saida
+console.log(idade)
+console.log(nome);
+console.log(cadastrado)
+
+// Tipos de Dados
+    // Primitivos
+        Number
+        String
+        Boolean
+        undefined
+        null
+
+    // Mutação de Variavél
+
+        var variavel = "Valor Inicial";
+        console.log(variavel);
+        variavel = "Novo Valor";
+        console.log(variavel);
+
+    // Alert e Prompt
+
+        var deposito;
+        varivael = prompt("Informe um valor para depositar : ");
+        alert(deposito);
+
+//Decisões logicas
+
+    /*Tabela Verdade
+    &&:
+    true + true =  true
+    o resto falso
+
+    ||:
+    false + false = falso
+    o resto true
+    */
+
+    //Operadores Logicos
+    // if,else if e else
+    var idade = prompt("digite sua idade: ");
+    if (idade<18){
+        console.log("Acesso negado");
+    } else if (idade ==18){
+        console.log(" Bem-Vindo ");
+    } else {
+        console.log("Não reconheço o que você digitou");
+    }
+
+    // Swwitch
+    var nome = prompt("Digite seu nome: ");
+    var emprego = prompt("Digite seu emprego: ");
+
+    switch(emprego){
+        case "policial":
+            console.log(nome + "é um policial.");
+            break;
+        case "cozinheiro":
+            console.log(nome + "é um cozinheiro(a).");
+            break;
+            
+        default:
+            console.log(nome + "trabalha em outra coisa.");
+    }
+
+// Funcões
+    // DRY : don´t repeat yourself
+    function VerificarIdade(username, AnoDeNasciemnto){
+        var username = prompt("username: ");
+        var AnoDeNasciemnto = prompt("digite o ano em que você nasceu: ");
+        var idade = 2025 - AnoDeNasciemnto;
+        if (idade=>18){
+            return username + "é maior de idade"
+        } else {
+            return username + "é menor de idade "
+
+    VerificarIdade(username, AnoDeNasciemnto);
+    }
+}
+
+
+
