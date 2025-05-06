@@ -83,5 +83,45 @@ console.log(cadastrado)
     }
 }
 
+    // Statment
+    function minhaFuncao(param1){
+        console.log("Execute uma ação");
+    }
+
+    if (1 !== 2){
+        console.log("Um IF é uma declaração");
+    }
+    console.log(minhaFuncao);
+
+    // Expression
+    var minhaOutraFuncao = function(param1){
+        console.log("Executa outra função");
+    }
+    console.log(minhaOutraFuncao);
+
+        // Uma soma é uma expressão
+        var soma = 5 + 7;
+        console.log(" Valor armazenado na variável 'soma' : "+soma);
+
+// Arrays
+
+var arrJogadores = ['Ricardo', 'Monica', 'Leonardo'];
+var arrAnoNascimento = new Array(1998, 1987, 1991);
+var arrPontos = [45, 117, 78];
+arrPontos[1]= 71;
+console.log(arrJogadores);
+console.log(arrJogadores[1]+ 'tem' +arrPontos[1]+' pontos.');
+
+    // Metodos
+
+        // PUSH ---> ADD VALUE
+        var arrPrato = ['arroz','carne','salada'];
+        console.log(arrPrato);
+        arrPrato.push('feijão');
+        console.log(arrPrato);
+    
+
+
+
 
 
