@@ -1,13 +1,13 @@
 let chamados = []
 function CriarChamado(setor, motivo, observaçoes) {
     const chamado = { setor, motivo, observaçoes }
-    items.push()
+    items.push(chamado) //
     console.log("Item Criado com sucesso")
 };
-function LerChamado() {
-    console.log("Lista de chamados:");
+function listarChamados() {
+    console.log("Lista de Chamados:");
     chamados.forEach((chamado, index) => {
-        console.log(`#${index} | Setor: ${chamados.setor}, Motivo: ${chamados.motivo}, Observações: ${chamados.observaçoes}`);
+      console.log(`#${index} | Setor: ${chamado.setor}, Motivo: ${chamado.motivo}, Obs: ${chamado.observacoes}`);
     });
 };
 function AtualizarChamado(index, novoSetor, novoMotivo, novasObservacoes) {
@@ -23,7 +23,6 @@ function AtualizarChamado(index, novoSetor, novoMotivo, novasObservacoes) {
     }
 
 }
-
 function RemoverChamado() {
     if (index > 0 && index < chamados.length) {
 
