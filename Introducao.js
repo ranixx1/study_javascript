@@ -142,8 +142,55 @@ console.log(arrJogadores[1]+ 'tem' +arrPontos[1]+' pontos.');
         }
         console.log(arrPrato);
     
+// Objetos e Propriedades
+    //Key-value pair(KVP)
+        // Notação
+        var carro ={
+            extras : [
+                "ar-condicionado",
+                "freios abs",
+                "som"
+                ],
+            velocidade:0,
+            faroisLigados : false,
+            ligarFarois: function(){
+                this.faroisLigados = true;
+            },
+            acelerar: function(velocidade){
+                this.velocidade += velocidade;
+            },
+            freiar: function(){
+                this.velocidade = 0;
+            }
+        }
+        carro.ligarFarois();
+        console.log("Farois ligados:" +carro.faroisLigados);
+        carro.acelerar(50);
+        console.log("Velocidade:" +carro.velocidade);
+        carro.freiar();
+        console.log("Velocidade:" +carro.velocidade)
 
+        // this
+        //refere-se ao objeto atual //retornar ou alterar o valor da mesma
 
+// LAÇOS
+        /* FOR
+        PADRAO: for(contador; condição;incremento){
+                ....logica....
+        }*/
+       for(var i =0; i<10; i++){
+        console.log(i)
+       }
 
+       var nomes = ['joao','paulo','lucas','pedro'];
+       for(var i = nomes.length -1; i>=0; i--){ //length retorna o número de elementos dentro de um array
+        console.log(nomes[i]);
+       }
 
+       /* WHILE
+       PADRAO: while(condição){
+                ....logica....
+       }
+
+       */
 
