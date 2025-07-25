@@ -11,7 +11,7 @@ function listarChamados() {
     });
 };
 function AtualizarChamado(index, novoSetor, novoMotivo, novasObservacoes) {
-    if (index > 0 && index < chamados.length) { // index: qual chamado você quer alterar ou excluir
+    if (index > 0 && index < chamados.length) { // index: qual chamado você quer alterar
         chamados[index] = {
             setor: novoSetor,
             motivo: novoMotivo,
@@ -24,7 +24,7 @@ function AtualizarChamado(index, novoSetor, novoMotivo, novasObservacoes) {
 
 }
 function RemoverChamado() {
-    if (index > 0 && index < chamados.length) {
+    if (index > 0 && index < chamados.length) { // index: qual chamado você quer excluir
 
 
         const removido = chamados.splice(index, 1);
@@ -33,6 +33,8 @@ function RemoverChamado() {
         console.log("Indice Invalido")
     }
 }
+
+// fuction chamado Changed
 function CriarChamadoComCampus(){
     const setor = document.getElementById("setor").value;
     const motivo = document.getElementById("motivo").value;
