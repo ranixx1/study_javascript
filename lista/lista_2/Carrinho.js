@@ -25,5 +25,5 @@ const estoque = {
     "fone": 0
 }
 
-validaEstoque(carrinho, estoque);
+console.log(validaEstoque(carrinho, estoque));
 
