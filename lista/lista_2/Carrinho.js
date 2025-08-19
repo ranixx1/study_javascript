@@ -1,20 +1,15 @@
-function ValidaEstoque(produtosNoCarrinho, estoqueAtual) {
-    disponivel = false;
-    for (i = 0; i <= carrinho.length; i++) {
-        const produtosNoCarrinho = Object.keys(carrinho);
-        const estoqueAtual = Object.keys(estoque);
-        const nomeDoProduto = produtosNoCarrinho[i];
-        const quantidadeDesejada = carrinho[nomeDoProduto];
-        const nomeDoProdutoEstq = estoqueAtual[i];
-        const quantidadenoEstoque = estoque[nomeDoProdutoEstq];
+function validaEstoque(carrinho, estoque) {
+    const itensParaVerificar = Object.keys(carrinho);
 
-        if (quantidadeDesejada[i] < quantidadenoEstoque[i]) {
-            disponivel = true;
-        } else {
-            return disponivel;
+    for (const item of itensParaVerificar) {
+        const quantidadeDesejada = carrinho[item];
+        const quantidadeDisponivel = estoque[item];
+
+        if (quantidadeDesejada > quantidadeDisponivel) {
+            return false;
         }
-        return disponivel;
     }
+    return true;
 }
 const carrinho = {
     "monitor": 4,
@@ -30,5 +25,5 @@ const estoque = {
     "fone": 0
 }
 
-ValidaEstoque(carrinho, estoque);
+validaEstoque(carrinho, estoque);
 
