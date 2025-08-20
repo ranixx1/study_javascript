@@ -13,6 +13,8 @@ function buscaMaior(arr){
 
 const lista = [3,4,3,4,3,43,4,3,4,3,432,43734,343,24,24,242424,2245];
 
+const Imaior = buscaMaior(lista);
+const Vmaior = lista[buscaMaior(lista)];
 
-console.log(buscaMaior(lista));
-console.log(lista[buscaMaior(lista)])
+console.log(Imaior);
+console.log(Vmaior);
