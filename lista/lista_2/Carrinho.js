@@ -1,11 +1,11 @@
 function validaEstoque(carrinho, estoque) {
     const itensParaVerificar = Object.keys(carrinho);
 
-    for (const item of itensParaVerificar) {
+    for(const item of itensParaVerificar){
         const quantidadeDesejada = carrinho[item];
         const quantidadeDisponivel = estoque[item];
 
-        if (quantidadeDesejada > quantidadeDisponivel) {
+        if (quantidadeDesejada > quantidadeDisponivel){
             return false;
         }
     }
@@ -22,7 +22,7 @@ const estoque = {
     "monitor": 10,
     "mouse": 35,
     "carregador": 2,
-    "fone": 0
+    "fone": 5
 }
 
 console.log(validaEstoque(carrinho, estoque));
