@@ -1,13 +1,13 @@
-import { criarArrayAleatorio } from "./CriaLista.js";
-function AdicionaNotaLimite(Arr) {
-    let notas = [];
-    for (let i = 0; i <= Arr.length; i++) {
-        if (Arr[i] >= 0 && Arr[i]<=10){
-            notas.push(Arr[i]);
-        }
+import { geraNotasTest } from "./CriaListaNotas.js";
+function CalculaMedia(Arr) {
+    let valor_final = 0;
+    for (let i = 0; i < Arr.length; i++) {
+        valor_final += Arr[i]
     }
-    return notas;
+    let media = valor_final / Arr.length;
+    return media;
 }
-let gerar_lista = criarArrayAleatorio(20);
-console.log(gerar_lista);
-console.log(AdicionaNotaLimite());
+let gerar_lista = geraNotasTest(20);
+console.log("Notas:" + gerar_lista)
+let mediaNotas = CalculaMedia(gerar_lista);
+console.log("Média das notas:", mediaNotas);
