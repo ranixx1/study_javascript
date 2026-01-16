@@ -58,4 +58,15 @@ function filter_by_idade(idade) {
     }
     return maiores;
 }
-console.log(filter_by_idade(15))
+function jsToCsv(data) {
+    if (!data.length) return "";
+
+    const headers = Object.keys(data[0]).join(",");
+    const rows = data.map(obj =>
+        Object.values(obj).join(",")
+    );
+
+    return [headers, ...rows].join("\n");
+}
+const csv = jsToCsv(tb_clientes);
+console.log(csv);
