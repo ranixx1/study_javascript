@@ -1,0 +1,36 @@
+let tb_vendas = [
+    { id: 1, data: "2025-01-07", cliente_id: 1, valor_total: 200, desconto: 10, metodo_pagamento: "PIX" },
+    { id: 2, data: "2025-04-05", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 3, data: "2025-07-1O", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 4, data: "2025-10-11", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 5, data: "2025-12-12", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 6, data: "2025-14-12", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 7, data: "2025-15-03", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 8, data: "2025-18-01", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 9, data: "2025-19-02", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 10, data: "2025-20-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 11, data: "2025-27-06", cliente_id: 5, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 12, data: "2025-21-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 13, data: "2025-27-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 14, data: "2025-31-10", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 15, data: "2025-12-07", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 16, data: "2025-31-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 17, data: "2025-30-08", cliente_id: 4, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 18, data: "2025-12-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 19, data: "2025-12-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 20, data: "2025-12-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 21, data: "2025-12-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 22, data: "2025-12-06", cliente_id: 2, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 23, data: "2025-12-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 24, data: "2025-12-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 25, data: "2026-12-01", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 26, data: "2025-12-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 27, data: "2025-12-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 28, data: "2025-12-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 29, data: "2025-12-06", cliente_id: 1, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+    { id: 30, data: "2026-14-01", cliente_id: 2, valor_total: 200, desconto: 0, metodo_pagamento: "PIX" },
+
+
+]
+
+//console.log(tb_vendas)
