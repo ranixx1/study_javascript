@@ -58,15 +58,15 @@ function filter_by_idade(idade) {
     }
     return maiores;
 }
-function jsToCsv(data) {
-    if (!data.length) return "";
-
-    const headers = Object.keys(data[0]).join(",");
-    const rows = data.map(obj =>
-        Object.values(obj).join(",")
-    );
-
-    return [headers, ...rows].join("\n");
+function filter_by_estado(estado){
+    let clientes = [];
+    for(let i=0;i<tb_clientes.length;i++){
+        if(tb_clientes[i].estado === estado){
+            clientes.push(tb_clientes[i]);
+        }
+    }
+    return clientes;
 }
-const csv = jsToCsv(tb_clientes);
-console.log(csv);
+//const csv = jsToCsv(tb_clientes);
+//console.log(csv);
+//console.log(filter_by_estado("RJ"))
